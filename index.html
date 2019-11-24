@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Harry Potter API</title>
+    <link rel="stylesheet" href="stylePotter.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+    <div class="header-container">
+      <div class="title text-danger">
+        <h1>HARRY POTTER CHARACTER SEARCH</h1>
+      </div>
+    </div>
+  </header>
+
+    <div class="row">
+      <div class="col-md-10">
+        <div class="input">
+          <!--Search Form-->
+          <form>
+            <div class="form-row">
+              <div class="col-3">
+                <input
+                  type="text"
+                  class="form-first form-control"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="text"
+                  class="form-last form-control"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2" id="submit">
+                  MISCHIEF MANAGED!
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Character Results Section-->
+    <section>
+      <div class="result-container">
+      <div class="name text-primary">
+        <h4 id="namePlace"></h4>
+      </div>
+      <div class="house text-primary">
+        <h4 id="housePlace"></h4>
+        </div>
+      <div class="patronus text-primary">
+        <h4 id="patronusPlace"></h4>
+      </div>
+      <div class="wand text-primary">
+        <h4 id="wandPlace"></h4>
+      </div>
+      </div>
+    </section>
+
+    <script src="potter.js"></script>
+  </body>
+</html>

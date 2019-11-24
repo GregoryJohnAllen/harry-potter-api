@@ -1,0 +1,40 @@
+body {
+  font-size: large;
+  font-weight: bolder;
+  background: url("https://images.unsplash.com/photo-1570610159825-ec5d3823660c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=891&q=80");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header-container {
+  height: 250px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: bolder;
+  font-size: 2.0em;
+}
+
+.input {
+  margin: 50px 50px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+section {
+  font-family: 'Philosopher', sans-serif;
+}
+
+.result-container {
+  margin: 50px 200px;
+  font-size: 1.5em;
+
+}
+
+
