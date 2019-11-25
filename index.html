@@ -20,8 +20,8 @@
   <body>
     <header>
     <div class="header-container">
-      <div class="title text-danger">
-        <h1>HARRY POTTER CHARACTER SEARCH</h1>
+      <div class=" title text-primary">
+        <h1 class="display-3">HARRY POTTER CHARACTER SEARCH</h1>
       </div>
     </div>
   </header>
@@ -57,22 +57,22 @@
       </div>
     </div>
     <!--Character Results Section-->
-    <section>
-      <div class="result-container">
-      <div class="name text-primary">
+    <section class= col-6>
+      <ul class="list-group result-container">
+      <li class="list-group-item list-group-item-success name text-dark">
         <h4 id="namePlace"></h4>
-      </div>
-      <div class="house text-primary">
+      </li>
+      <li class="list-group-item list-group-item-warning house text-dark">
         <h4 id="housePlace"></h4>
-        </div>
-      <div class="patronus text-primary">
+      </li>
+      <li class="list-group-item list-group-item-danger patronus text-dark">
         <h4 id="patronusPlace"></h4>
-      </div>
-      <div class="wand text-primary">
+      </li>
+      <li class="list-group-item list-group-item-primary wand text-dark">
         <h4 id="wandPlace"></h4>
-      </div>
-      </div>
-    </section>
+      </li>
+    </ul>
+  </section>
 
     <script src="potter.js"></script>
   </body>

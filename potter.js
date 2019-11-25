@@ -17,6 +17,8 @@ const section = document.querySelector("section");
 
 searchForm.addEventListener("submit", fetchCharacter);
 
+section.style.display = "none";
+
 function fetchCharacter(e) {
   e.preventDefault();
 
@@ -49,10 +51,19 @@ function displayCharacter(json) {
   //   section.removeChild(section.firstChild);
   // }
 
+  section.style.display = "block";
+  
   let name = json[0].name;
   let house = json[0].house;
   let patronus = json[0].patronus;
   let wand = json[0].wand;
+
+  if(patronus == undefined) {
+    patronus = "Still a mystery"
+  };
+  if(wand == undefined) {
+    wand = "Still a mystery"
+  };
 
   document.getElementById("namePlace").innerHTML = 'Name: '+ name;
   document.getElementById("housePlace").innerHTML = 'House: ' + house;
