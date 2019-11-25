@@ -17,7 +17,9 @@ const section = document.querySelector("section");
 
 searchForm.addEventListener("submit", fetchCharacter);
 
-section.style.display = "none";
+function hideList (){
+  section.style.display = "none";
+}
 
 function fetchCharacter(e) {
   e.preventDefault();
@@ -69,6 +71,4 @@ function displayCharacter(json) {
   document.getElementById("housePlace").innerHTML = 'House: ' + house;
   document.getElementById("patronusPlace").innerHTML = 'Patronus: ' + patronus;
   document.getElementById("wandPlace").innerHTML = 'Wand: ' + wand;
-
-
 }
