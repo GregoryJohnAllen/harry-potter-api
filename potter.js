@@ -61,10 +61,10 @@ function displayCharacter(json) {
   let wand = json[0].wand;
 
   if(patronus == undefined) {
-    patronus = "Still a mystery"
+    patronus = "Still a mystery, maybe try fanfiction :/"
   };
   if(wand == undefined) {
-    wand = "Still a mystery"
+    wand = "Still a mystery, maybe try fanfiction :/"
   };
 
   document.getElementById("namePlace").innerHTML = 'Name: '+ name;
